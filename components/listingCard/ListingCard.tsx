@@ -5,7 +5,6 @@ import { Images, Listing, Reservation } from "@prisma/client";
 import { useRouter } from "next/navigation";
 import React, { useCallback, useMemo, useState } from "react";
 import {format} from 'date-fns'
-import Gallery from "./Gallery";
 import HeartButton from "../HeartButton";
 import ImageSwiper from "./ImageSwiper";
 import Button from "../Button";
@@ -13,7 +12,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 interface ListingCardProps{
-  data: Listing & {
+  data: SageListing & {
     images: Images[]
   };
 
