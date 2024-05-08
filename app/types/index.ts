@@ -1,10 +1,13 @@
-import {  Images, Listing, User } from "@prisma/client";
+import {  Listing, User } from "@prisma/client";
 
 
 
-export type SageListing = Omit<Listing , "createdAt" | "images"> & {
-  createdAt: string
-  images: ImageString
+
+
+
+export type SageListing = Omit<Listing , "createdAt"> & {
+  createdAt: string,
+
 }
 
 
@@ -16,12 +19,4 @@ User,
   createdAt: string;
   updatedAt: string;
   emailVerified: string | null
-}
-
-export type ImageString = Omit<
-Images,
-"createdAt" | "updatedAt" 
-> & {
-  createdAt: string;
-  updatedAt: string;
 }

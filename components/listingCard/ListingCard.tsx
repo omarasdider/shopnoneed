@@ -30,7 +30,8 @@ interface ListingCardProps{
 
 const ListingCard = ({data, reservation, disabled, onAction, actionLabel, actionId = "", currentUser,}:ListingCardProps) => {
 
-
+    const router = useRouter()
+   const [isVisible, seIstVisible] = useState<boolean>(false)
 
     const handleCancel = useCallback((e:React.MouseEvent<HTMLButtonElement>)=>{
     e.stopPropagation()

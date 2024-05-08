@@ -31,13 +31,7 @@ export interface IListingParams{
         const safeListings = listings.map((listing)=> ({
           ...listing,
           createdAt: listing.createdAt.toISOString(),
-          images:{
-            ...listing.images.map((image) => ({
-              ...image,
-              createdAt: image.createdAt.toISOString(),
-              updatedAt: image.updatedAt.toISOString()
-            }))
-          } 
+      
          }
           
          ))
