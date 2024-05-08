@@ -16,7 +16,6 @@ import { useLoginModal } from "@/hooks/useLoginModal";
 import { differenceInCalendarDays, differenceInDays, eachDayOfInterval } from "date-fns";
 import axios from "axios";
 import toast from "react-hot-toast";
-import ListingReservation from "./ListingReservation";
 import { Range } from "react-date-range";
 
 const initialDateRange = {
@@ -156,17 +155,7 @@ const ListingClient = ({reservations =[], currentUser, listing}:listingClientPro
  />
 
 
-<div className="order-first mb-10 md:order-last md:col-span-2 sm:order-last sm:cols-span-4">
-  <ListingReservation
-     price ={listing.price}
-     totalPrice ={totalPrice}
-     onChangeDate = {(value) => setDateRange(value)}
-     dateRange ={dateRange}
-     onSubmit = {onCreationReservation}
-     disabled = {isLoading}
-     disabledDates = {disabledDates}
-  />
-  </div>
+
  
  </div>
 </div>
