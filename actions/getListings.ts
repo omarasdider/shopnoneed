@@ -28,13 +28,13 @@ export interface IListingParams{
             images: true
           },
         })
-        // const safeListings = listings.map((listing)=> ({
-        //   ...listing,
-        //   createAt: listing.createdAt.toISOString(), 
-        //  }
+        const safeListings = listings.map((listing)=> ({
+          ...listing,
+          createAt: listing.createdAt.toISOString(), 
+         }
           
-        //  ))
-         return listings
+         ))
+         return  safeListings
     } catch (error: any) {
         throw new Error
     }
