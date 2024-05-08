@@ -2,8 +2,7 @@
 
 import { SafeReservation, SafeUser, SageListing } from "@/app/types";
 import Container from "@/components/Container";
-import { Images, Reservation } from "@prisma/client";
-import GalleyTab from "@/components/listingCard/GalleryTab";
+import { Images, } from "@prisma/client";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Image from "next/image";
 import HeartButton from "@/components/HeartButton";

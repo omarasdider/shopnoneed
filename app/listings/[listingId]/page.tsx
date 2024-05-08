@@ -9,7 +9,7 @@ import HeartButton from "@/components/HeartButton";
 import { getCurrentUser } from "@/app/data-query/getCurrentUser";
 import ListingInfo from "./ListingInfo";
 import ListingClient from "./listingClient";
-import getReservation from "@/actions/getReservation";
+
   
   interface IParams{
     listingId?: string
